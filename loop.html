@@ -8,9 +8,13 @@
 <body>
     <script type="text/javascript" >
 
-    let animals = ['lamb', 'sheep', 'cow', 'dog', 'cat']
+    let planets = ['jupiter', 'mars', 'earth', 'saturn', 'venus']
 
-    document.write(animals[0]);
+    for (let alertLoopNumber = 0; alertLoopNumber <= 4; alertLoopNumber++) {
+        document.write('<li>' + planets[alertLoopNumber] + '</li>'); 
+    }
+    planets.forEach(planet => document.write('<li>' + planet + '</li>'));
+
     </script>
 
 
