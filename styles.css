@@ -1,0 +1,45 @@
+.accordion {
+    max-width: 500px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.accordion:last-child {
+    bottom-border: 1px black;
+}
+
+.accordion-header {
+    display: flex;
+    padding: 16px;
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+.accordion-title {
+    felx: 1;
+}
+
+.accordion-icon {
+    width: 16px;
+}
+
+.accordion-content {
+    padding: 16px;
+}
+
+.accordion-content {
+    display: none;
+}
+
+
+const accordionHeaders = documents.getElementsByClassName('accordion-header');
+const accordionContents = documents.getElementsByClassName('accordion-content');
+const accordionIcons = documents.getElementsByClassName('accordion-icon');
+
+for (let i = 0; i < accordionHeaders.length; i++) {
+    accordionHeaders[i].addEventListener('click', () => {
+        accordionContents[i].style.display = accordionContents[i].style.display == 'block' ? 'none' : 'block';
+        accordionIcons[i].innerHTML = accordionContents[i].style.display == 'block' ? '-' : '+';
+    
+    });
+} 
