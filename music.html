@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="script.js"> </script>
+    <title>Music Application</title>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html">References</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+        </ul> 
+  </head>
+</div>
+  <body>
+    <h1>Music</h1>
+    <p>This is an interactive page that changes the content based on which type of music is popular at the time.</p>
+
+    <form> 
+        Select your favorite music genre to change the website theme:
+        <select id="background" onchange="musicSelector(this)">
+        <option value="country">Country</option>
+        <option value="pop">Pop</option>
+        <option value="rock">Rock</option>
+        <option value="jazz">Jazz</option>
+        
+        </select>
+    </form>
+  </body>
+</html>
