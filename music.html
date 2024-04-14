@@ -39,12 +39,71 @@
     <hr> 
 
     <h2 id="music-title">Country</h2>
-
     <p id="music-description">a form of popular music originating in the rural southern US. It is traditionally a mixture of ballads and dance tunes played characteristically on fiddle, guitar, steel guitar, drums, and keyboard.</p>
-
     <figure>
         <img width="500" id="music-image" src="../images/music/country.jpg"/>
         <figcaption id="music-image-caption ">Photo by <a href="https://unsplash.com/@reinf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Raúl Nájera</a> on <a href="https://unsplash.com/photos/woman-performing-on-stage-OsTJNX83lC0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
     </figure>
+
+    <hr> 
+
+    <h2 id="music-title">Pop</h2>
+    <p id="music-description">Pop music is an abbreviation of the word 'popular. ' It's a contemporary form of music that appeals to a very wide audience. It often includes a danceable tempo, easy to remember lyrics, and simple notation.</p>
+    <figure>
+        <img width="500" id="music-image" src="../images/music/country.jpg"/>
+        <figcaption id="music-image-caption ">Photo by <a href="https://unsplash.com/@adityachinchure?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aditya Chinchure</a> on <a href="https://unsplash.com/photos/group-of-people-in-front-of-stage-ZhQCZjr9fHo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+    </figure>
+
+    <hr> 
+
+    <h2 id="music-title">Rock</h2>
+    <p id="music-description">a form of popular music that evolved from rock and roll and pop music during the mid and late 1960s.</p>
+    <figure>
+        <img width="500" id="music-image" src="../images/music/country.jpg"/>
+        <figcaption id="music-image-caption ">Photo by <a href="https://unsplash.com/@hectorbermudez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hector Bermudez</a> on <a href="https://unsplash.com/photos/man-playing-electric-guitar-iIWDt0fXa84?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+    </figure>
+
+    <hr> 
+
+    <h2 id="music-title">Jazz</h2>
+    <p id="music-description"> Jazz includes swing and blue notes, complex chords, call and response vocals, polyrhythms and improvisation</p>
+    <figure>
+        <img width="500" id="music-image" src="../images/music/country.jpg"/>
+        <figcaption id="music-image-caption ">Photo by <a href="https://unsplash.com/@jensth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jens Thekkeveettil</a> on <a href="https://unsplash.com/photos/person-playing-saxophone-dBWvUqBoOU8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+    </figure>
+
+    <script>
+        function musicSelector(selectElm) {
+            var i = selectElm.selectIndex;
+            if (i < 0) {
+                return;
+            }
+
+            var optionValue = selectElem.options[i].value;
+
+            if (optionValue === "country") {
+                document.getElementById("music-title").innerHTML = "Country";
+
+            }
+            else if (optionValue === "pop") {
+                document.getElementById("music-title").innerHTML = "Pop";
+
+            }
+
+            else if (optionValue === "rock") {
+                document.getElementById("music-title").innerHTML = "Rock";
+
+            }
+
+            else if (optionValue === "jazz") {
+                document.getElementById("music-title").innerHTML = "Jazz";
+
+            }
+            else {
+                document.write("Something went wrong.Please Refresh.");
+            }
+
+        }
+    </script>
   </body>
 </html>
