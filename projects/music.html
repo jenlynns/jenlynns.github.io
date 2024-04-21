@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Music</title>
+    <style>
+
+        body {
+            background-color: #33CC99;
+            width: 100%;
+            max-width: 800px;
+            margin: 0px auto;
+            color: #FFF;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+
+        h1 {
+            font-size: 3.25rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p, form, input, select, figure {
+            font-size: 1.5rem;
+        }
+
+        hr {
+            outline: none;
+            border: none;
+            height: 1px;
+            background-color: #FFF;
+            margin: 24px 0px;
+        }
+
+        figure {
+            margin: 24px 0px 48px;
+        }
+
+        img {
+            margin: 0px 0px 8px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Music</h1>
+    <p>This is an interactive webpage that changes the content based on the music choice that is selected</p>
+
+    <form>
+        Select your favorite music to change the website theme:
+
+        <select id="background" onchange="musicSelector(this)">
+            <option value="country">Country</option>
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="jazz">Jazz</option>
+        </select>
+
+    </form>
+
+    <p><a href="../projects.html">View my other projects.</a></p>
+
+    <hr>
+
+    <h2 id="music-title">Country</h2>
+
+    <p id="music-description">a form of popular music originating in the rural southern US. It is traditionally a mixture of ballads and dance tunes played characteristically on fiddle, guitar, steel guitar, drums, and keyboard.</p>
+
+    <figure>
+        <img width="500" id="music-image" alt="outdoors during the season" src="../images/music/country.jpg" />
+        <figcaption id="music-image-caption">Photo by <a href="https://unsplash.com/@mitchel3uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mitchell Luo</a> on <a href="https://unsplash.com/s/photos/spring?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
+    </figure>
+
+    <script>
+
+        function musicSelector(selectElem) {
+            var i = selectElem.selectedIndex;
+            if (i < 0) {
+                return;
+            }
+
+            var optionValue = selectElem.options[i].value;
+
+            // This option resets the values for country if someone wants to go back.  
+
+            if (optionValue === "country") {
+                document.body.style.backgroundColor = "#33CC99";
+                document.getElementById("music-title").innerHTML = "Country";
+                document.getElementById("music-description").innerHTML = "a mixture of ballads and dance tunes played characteristically on fiddle, guitar, steel guitar, drums, and keyboard.";
+                document.getElementById("music-image").src="../images/music/country.jpg"
+                document.getElementById("music-image-caption").innerHTML = 'Photo by <a href="https://unsplash.com/@reinf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Raúl Nájera</a> on <a href="https://unsplash.com/photos/woman-performing-on-stage-OsTJNX83lC0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>';
+            }
+
+            else if (optionValue === "pop") {
+                document.body.style.backgroundColor = "#FF0066";
+                document.getElementById("music-title").innerHTML = "Pop";
+                document.getElementById("music-description").innerHTML = "Pop music is an abbreviation of the word 'popular. It's a contemporary form of music that appeals to a very wide audience.';'
+                document.getElementById("music-image").src="../images/music/pop.jpg"
+                document.getElementById("music-image-caption").innerHTML = 'Photo by <a href="https://unsplash.com/@dreamsoftheoceans?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Linus Nylund</a> on <a href="https://unsplash.com/s/photos/summer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>';
+            }
+
+            else if (optionValue === "rock") {
+                document.body.style.backgroundColor = "#FF9933";
+                document.getElementById("music-title").innerHTML = "Rock";
+                document.getElementById("music-description").innerHTML = "Rock music is famous for having a strong backbeat, usually in 4/4 rhythm, although more progressive styles can employ trickier time signatures.";
+                document.getElementById("music-image").src="../images/music/rock.jpg"
+                document.getElementById("music-image-caption").innerHTML = 'Photo by <a href="https://unsplash.com/@jeremythomasphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Thomas</a> on <a href="https://unsplash.com/s/photos/autumn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>';
+            }
+
+            else if (optionValue === "jazz") {
+                document.body.style.backgroundColor = "#0099FF";
+                document.getElementById("music-title").innerHTML = "Jazz";
+                document.getElementById("music-description").innerHTML = "Jazz is characterized by swing and blue notes, complex chords, call and response vocals, polyrhythms and improvisation.";
+                document.getElementById("music-image").src="../images/music/jazz.jpg"
+                document.getElementById("music-image-caption").innerHTML = 'Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/winter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>';
+            }
+
+            // This is important to have because it will let you know if you have an error anywhere in your code.
+
+            else {
+                document.write("Something went wrong. Please refresh the page.");
+            }
+        }
+
+    </script>
+
+  </body>
+</html>
