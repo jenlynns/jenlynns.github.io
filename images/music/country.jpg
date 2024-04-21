@@ -1,4 +1,4 @@
-<figure>
-        <img width="500" id="music-image" src="./images/music/country.jpg"/>
-        <figcaption id="music-image-caption ">Photo by <a href="https://unsplash.com/@reinf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Raúl Nájera</a> on <a href="https://unsplash.com/photos/woman-performing-on-stage-OsTJNX83lC0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
-</figure>
+    <figure>
+        <img width="500" id="music-image" alt="outdoors during the season" src="../images/music/country.jpg" />
+        <figcaption id="music-image-caption">Photo by <a href="https://unsplash.com/@tinymountain?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Katherine Hanlon</a> on <a href="https://unsplash.com/photos/person-playing-brown-acoustic-guitar-pOraJAwCFRo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></a></figcaption>
+    </figure> 
