@@ -1,59 +1,32 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <body style="background-color:rgba(71, 64, 216, 0.922);">
+  <head>
+    <body style="background-color:FloralWhite;">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Experience</title>
+    <title>Jenna Sobecky's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-</head>
-    <body>
-        <h1>About Myself</h1>
-
-        <div class="accordion">
-            <div class="accordion-header">
-                <div class="accordion-title">Experience</div>
-                <span class="accordion-icon">+</span>
-            </div>
-            
-            <div class="accordion-content">
-                I.T Internship at Mount Aloysius College
-            </div>
+  
+  </head>
+  <body>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="experience.html">Experience</a>
+    </li>
+    <div class="container my-5">
+        <h1>Experiences</h1>        
+        <div class="col-lg-8 px-0">
+          <p>Volunteer at Local Animal Shelter</p>
+          <p>Full-time job at Local I.T Company</p>
+          <p>Computer Club President </p>
+          </p>
+  
         </div>
-
-        <div class="accordion">
-            <div class="accordion-header">
-                <div class="accordion-title">Volunteer</div>
-                <span class="accordion-icon">+</span>
-            </div>
-            
-            <div class="accordion-content">
-                Held a donation drive for a local animal shelter in the area. 
-            </div>
-        </div>
-
-
-    </body>
-
-
-
-    <script>
-        const accordionHeaders = documents.getElementsByClassName('accordion-header');
-        const accordionContents = documents.getElementsByClassName('accordion-content');
-        const accordionIcons = documents.getElementsByClassName('accordion-icon');
-
-        for (let i = 0; i < accordionHeaders.length; i++) {
-            accordionHeaders[i].addEventListener('click', () => {
-                accordionContents[i].style.display = accordionContents[i].style.display == 'block' ? 'none' : 'block';
-                accordionIcons[i].innerHTML = accordionContents[i].style.display == 'block' ? '-' : '+';
-            
-            });
-        }
-    
-    </script>
+      </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
+  </body>
 </html>
